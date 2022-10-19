@@ -1,0 +1,177 @@
+/* This changes the color of text you select with your mouse! 
+https://www.w3schools.com/cssref/sel_selection.asp */
+​
+::selection {
+    background-color: #bf873d;
+    color: #f6f5f4;
+}
+​
+​
+/* Palette */
+    /* From Coolers image palette generator: https://coolors.co/727173-bf873d-b4aea7-d0ccc8-e3e0de-f6f5f4 */
+​
+nav,
+footer {
+	background-color: #727173;
+}
+​
+header {
+	background-color: #bf873d;
+}
+​
+main,
+section,
+article {
+	background-color: #b4aea7;
+}
+​
+h1,
+aside {
+	background-color: #d0ccc8;
+}
+​
+​
+/* Sizing and positioning */
+​
+header, 
+nav, 
+footer {
+	height: 100px;
+}
+​
+section,
+article {
+	height: 300px;
+}
+​
+aside {
+	height: 600px;
+}
+​
+.column {
+	width: 50%;
+}
+​
+.float-left {
+	float: left;
+}
+​
+​
+/* Section styling*/
+    /* The overflow property helps you manage content that spills outside of its container:
+​
+        https://www.w3schools.com/cssref/pr_pos_overflow.asp 
+​
+    My excessively long <ul> spilled outside of <section> any time I used a smaller browser window so I added overflow: auto to add a scroll bar. */
+​
+section {
+    overflow: auto;
+}
+​
+section > p {
+    padding: 5px 10px;
+}
+​
+section > ul {
+    padding-left: 40px;
+}
+​
+​
+/* Borders */
+​
+nav,
+header,
+h1,
+main,
+footer {
+	border: 8px double;
+}
+​
+div.column {
+	border-right: 3px solid;
+}
+​
+article {
+	border-top: 3px solid;
+}
+​
+nav,
+header,
+h1,
+main,
+footer,
+div.column,
+article {
+	border-color: #f6f5f4;
+}
+​
+​
+/* Navigation Bar */
+    /* I was having issues with my header covering up my navbar upon scrolling because of the usage of position: absolute in the header. I fixed it by using the z-index property! 
+​
+        https://developer.mozilla.org/en-US/docs/Web/CSS/z-index
+​
+    Now, the nav bar will always display in front of the header because the nav bar has a higher z-index value. (Try commenting out the z-index properties in .nav-bar and .hero-image to see the problem I was trying to fix!) */
+​
+.nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+​
+.nav-bar > ul > li {
+    display: inline-block;
+    margin: 33px 0 33px 25px;
+}
+​
+.nav-bar > ul > li > a {
+    text-align: center;
+    text-decoration: none;
+    background-color: #d0ccc8;
+    border: 2px solid #f6f5f4;
+    padding: 6px 10px;
+}
+​
+.nav-bar > ul > li > a:hover {
+    background-color: #bf873d;
+    color: #f6f5f4;
+}
+​
+.nav-bar > ul > li > a:visited {
+    color: #727173;
+}
+​
+​
+/* Hero Image */
+    /* Learn more about hero images here: https://www.w3schools.com/cssref/pr_pos_overflow.asp */
+​
+.hero-image {
+    background-image: url("../img/knitting-header.jpg"), url("https://images.pexels.com/photos/3654773/pexels-photo-3654773.jpeg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 300px;
+    position: relative;
+    z-index: 1;
+}
+​
+.hero-title {
+    text-align: center;
+    width: 500px;
+    padding: 22px;
+    text-shadow: 1px 1px 0 #bf873d, 0px 11px 20px rgba(139,69,19,0.2);
+    box-shadow: 0px 0px 35px 16px rgba(65, 63, 63, 0.747);
+    /* Centering my <h1> horizontally and vertically inside the header */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+​
+#hero-image-credit {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 10px;
+    color: #d0ccc8;
+}
