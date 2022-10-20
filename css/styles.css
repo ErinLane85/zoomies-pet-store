@@ -94,5 +94,20 @@ footer {
     /* position: fixed;
     bottom: 0; */
 }
-
-/* LOCATION SECTION */
+.location {
+    padding: var(--md-size);
+    min-height: 50vh;
+}
+.column-md {
+    width: 40%;
+}
+.column-lg {
+    width: 50%;
+}
+.float-right {
+    float: right;
+    margin-top: -3.5rem;
+}
+#about-section {
+    padding: 1.5rem;
+}
