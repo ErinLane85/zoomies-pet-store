@@ -26,10 +26,13 @@
             </a>
             <ul class="float-left">
                 <li>
-                    <a href="#about-section"> <i class="fa-solid fa-circle-info"></i> About</a>
+                    <a href="#about-section"> <i class="fa-solid fa-circle-info"></i>About</a>
                 </li>
                 <li>
-                    <a href="#location-section">Locations</a>
+                    <a href="#shop-section">Our Shop</a>
+                </li>
+                <li>
+                    <a href="#locations-section">Locations</a>
                 </li>
                 <li>
                     <a href="contact.html">Contact</a>
@@ -42,9 +45,9 @@
         </h1>
     </header>
     <main class="container bg-light w-lg m-auto">
-        <!-- SECTION FOR: BEAUTY PRODUCTS, TRAINING, ACCESORIES, AND FOOD -->
         <br>
         <br>
+        <!-- SHOP -->
         <section id="shop-section">
             <h2 class="heading-title">Our Shop</h2>
             <!-- CATEGORIES -->
@@ -85,34 +88,43 @@
                         <a href="#">Learn More</a>
                     </div>
                 </div>
+                <div class="clearfix"></div>
             </div>
         </section>
     </main>
     <br>
     <section class="bg-light w-lg m-auto" id="about-section">
-        <div>
             <h2 class="heading-title">About Zoomies</h2>
             <br>
-            <div class="gap">
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto molestiae facilis totam eum dolorem, similique quam, eos, tenetur a laborum reiciendis provident expedita! Facilis nemo distinctio reiciendis inventore atque expedita eveniet nulla corrupti vel qui? Mollitia earum, quisquam dignissimos aperiam nostrum blanditiis officia error, sed eius tempora consequatur nihil rerum dolores provident beatae nesciunt consectetur! Reiciendis laborum consectetur ipsum pariatur, voluptate, non nihil dolore ab doloribus nisi maiores. Modi rerum necessitatibus non in, consequatur voluptate! At quaerat, dolore laudantium ab corporis nobis, sed earum maxime nostrum consequuntur quis. Totam maxime natus quaerat? Necessitatibus corporis ex nam dolorum ipsum, odit doloremque delectus quisquam cumque sequi laudantium dolor consequuntur consectetur fugiat non porro numquam eum harum, voluptatibus dignissimos rerum autem. Recusandae fugiat, fugit perferendis unde facere magni. Odit provident in possimus modi repellat obcaecati autem quidem quod odio, veritatis deserunt. Natus, modi vitae. Sapiente ducimus, iure minima mollitia, quidem accusantium quae excepturi similique doloribus dicta ex veritatis officiis placeat est omnis earum expedita molestiae alias. Molestias laudantium illum, aut dolor fugiat recusandae soluta magnam laboriosam voluptate ipsa totam quasi dolores aperiam maxime a necessitatibus excepturi, repudiandae rem accusamus cumque voluptatum quod? Distinctio quam similique esse sapiente eius nam nesciunt magni provident. Architecto maiores corporis omnis eius minima quis debitis eligendi quae sapiente! Iure consectetur aliquam ab deleniti dolorum est voluptate dicta dolores quos eos fuga modi quo corporis reprehenderit, dolore enim atque reiciendis ad unde necessitatibus rem! Ratione nobis eos voluptates, debitis velit odit provident aspernatur corrupti assumenda iure! Numquam, a eveniet!</p>
-            </div>
-        </div>
     </section>
     <br>
-    <section class="location bg-light w-lg m-auto" id="location-section">
-        <div>
-            <h2 class="heading-title">Our Location & Store Hours</h2>
+    <!-- LOCATIONS -->
+    <section class="bg-light w-lg m-auto" id="locations-section">
+            <h2 class="heading-title">Our Locations & Store Hours</h2>
             <br>
-            <div class="float-left gap">
-                <h3>Location</h3>
-                    <p>1234 ABC Street</p>
-                    <p>My City, CA 90210</p>
-                <br>
-                <h3>Store Hours</h3>
-                    <p>M - F    8:00am to 5:00pm</p>
-                    <p>Sa - Su  10:00am to 3:00pm</p>
+            <!-- LOCATION ONE -->
+            <div class="float-left column-sm locations-section-container gap bg-light w-lg m-auto">
+                <div>
+                    <img src="img/pet-7.png" alt="Zoomies Pet Store Location One - ABC Street" class="locations-section-img">
+                    <address>
+                        1234 ABC Street<br>
+                        Sacramento, CA 95821
+                    </address>
+                    <phone><span>(000) 123-4567</span></phone>
                 </div>
-                <div id="googleMap" style=width:400px;height:200px; class="float-left"></div>
+            </div>
+                <div class="float-left column-sm locations-section-container gap bg-light w-lg m-auto">
+                    <div>
+                        <img src="img/pet-7.png" alt="Zoomies Pet Store Location Two - XYZ Ave." class="locations-section-img">
+                        <address>
+                            4321 XYZ Ave.<br>
+                            Grass Valley, CA 95943
+                        </address>
+                        <phone><span>(000) 765-4321</span></phone>
+                    </div>
+                </div>
+                <div id="googleMap" style=width:200px;height:200px; class="float-left"></div>
                 <script>
                     function myMap() {
                     var mapProp= {
@@ -124,7 +136,24 @@
                 </script>
                 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBb-gmuj3PailwDXDCqMRjTHrbe6rWX47E&callback=myMap">
                 </script>
-        </div>
+                <div class="float-left column-sm locations-section-container gap bg-light m-auto" id="hours">
+                    <h3>Store Hours</h3>
+                <ul>
+                    <li>Monday: 9am to 6pm PDT</li>
+                    <li>Tuesday: 9am to 6pm PDT</li>
+                    <li>Wednesday: 9am to 6pm PDT</li>
+                    <li>Thursday: 9am to 6pm PDT</li>
+                    <li>Friday: 9am to 6pm PDT</li>
+                    <li>Saturday: 10am to 3pm PDT</li>
+                    <li>Sunday: Closed</li>
+                </ul>
+                </div>
+                <div class="clearfix"></div>
+                <br>
+                <div>
+                    <p>If you'd like us to contact you, <a href="contact.html">please complete our contact form</a></p>
+                </div>
+        
     </section>
     <br>
     <footer>

@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 :root {
-    --primary:#FF9F1C;
+    --primary:lightgrey;
     --secondary: #755d3b;
     --light: #FDFFFC;
     --dark: #011627;
@@ -109,5 +109,16 @@ footer {
     margin-top: -3.5rem;
 }
 #about-section {
+    padding: 1.5rem;
+}
+
+.locations-section-img {
+    width: 50%;
+    height: 50%;
+}
+#hours {
+    margin-left: 2.5rem;
+}
+#locations-section {
     padding: 1.5rem;
 }
